@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RajendraConsoleApp.Day19
+{
+    internal class Rectangle
+    {
+        int Length, Breadth;
+        double Area, Perimeter;
+
+        public void GetData(int length, int Breadth)
+        {
+           this. Length = length;
+            this.Breadth = Breadth;
+
+        }
+
+        public void Calculation()
+        {
+            Area = this.Length *this.Breadth;
+            Perimeter= 2*(this.Length+this.Breadth);
+
+        }
+
+        public string  DisplayData()
+        {
+            return $"the Area of Rectangle {Area}\n THe perimater of reactangle {Perimeter}";
+        }
+
+
+    }
+}
